@@ -120,12 +120,12 @@ $(function() {
     });
     
     $("#clicker").longpress(function() {
-        alert("longpressed");
-    })
-    
-    $("#clicker").click(function() {
-        alert("shortpressed");
-    })
+        markType = 1;
+        checkMark(markType);
+    }, function() {
+        markType = 0;
+        checkMark(markType);
+    }, config.dotDuration);
     
     showChars(currentPosition);
     
