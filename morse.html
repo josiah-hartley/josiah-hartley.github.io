@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <table align="center">
+        <!--<tr>
+            <th>Previous Character</th><th>Current Character</th><th>Next Character</th>
+        </tr>-->
+        <tr class="letters">
+            <td><span id="prevChar"></span></td><td class="center-char"><span id="currChar"></span></td><td><span id="nextChar"></span></td>
+        </tr>
+        <tr class="codes">
+            <td><span id="prevCharMorse"></span></td><td class="center-char"><span id="currCharMorse"></span></td><td><span id="nextCharMorse"></span></td>
+        </tr>
+    </table>
+    
+    <div class="results-modal hidden">
+    <h1>Results</h1>
+        <span class="results-holder"></span>
+        <span class="btn" id="close-results-modal">Got It</span>
+    </div>
+    <!--<button id="tick">Next</button>-->
+    
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="jquerylocal.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
