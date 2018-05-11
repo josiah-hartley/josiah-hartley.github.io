@@ -19,7 +19,6 @@ table {
   color: white; }
   table td {
     text-align: center;
-    padding: 5px 30px 5px 30px;
     /*span:not(.current-mark) {
         .highlighted-svg: {
             stroke: red;
@@ -28,9 +27,11 @@ table {
     }*/ }
     @media (min-width: 768px) {
       table td {
+        padding: 5px 30px 5px 30px;
         font-size: 3.5em; } }
     @media (max-width: 767px) {
       table td {
+        padding: 5px;
         font-size: 1.5em; } }
     table td:not(.center-char) {
       opacity: 0.6; }
