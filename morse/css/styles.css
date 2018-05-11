@@ -78,6 +78,13 @@ table {
       background-color: white;
       color: black; }
 
+#clicker {
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none; }
+
 .hidden {
   display: none; }
 
