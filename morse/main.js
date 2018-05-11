@@ -119,13 +119,24 @@ $(function() {
         }
     });
     
-    $("#clicker").longpress(function() {
+    /*$("#clicker").longpress(function() {
         markType = 1;
         checkMark(markType);
     }, function() {
         markType = 0;
         checkMark(markType);
-    }, config.dotDuration);
+    }, config.dotDuration);*/
+    
+    var clicker = document.getElementById('clicker');
+    clicker.addEventListener('long-press', function(e) {
+        e.preventDefault();
+        markType = 1;
+        checkMark(markType);
+    });
+    clicker.addEventListener('click', function() {
+        markType = 0;
+        checkMark(markType);
+    });
     
     showChars(currentPosition);
     
