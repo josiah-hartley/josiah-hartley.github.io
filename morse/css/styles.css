@@ -109,6 +109,9 @@ table {
   text-align: center; }
   #clicker .btn {
     margin: 30px; }
+  @media (min-width: 768px) {
+    #clicker {
+      display: none; } }
 
 .clicker-circle {
   stroke: white;
@@ -121,5 +124,16 @@ table {
 
 .hidden {
   display: none; }
+
+.instructions {
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  padding-bottom: 20px; }
+  @media (max-width: 767px) {
+    .instructions {
+      display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
