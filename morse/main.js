@@ -123,7 +123,7 @@ $(function() {
         alert("longpressed");
     })
     
-    $("#clicker").longpress(function() {
+    $("#clicker").click(function() {
         alert("shortpressed");
     })
     
