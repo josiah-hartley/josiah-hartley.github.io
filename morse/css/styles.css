@@ -88,10 +88,17 @@ table {
   width: 30%;
   left: 35%;
   text-align: center; }
+  #clicker .btn {
+    margin: 30px; }
 
 .clicker-circle {
   stroke: white;
   fill: white; }
+
+.clicker-line {
+  stroke: white;
+  fill: white;
+  stroke-width: 30; }
 
 .hidden {
   display: none; }
