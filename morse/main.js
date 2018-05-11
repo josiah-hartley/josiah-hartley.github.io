@@ -130,10 +130,12 @@ $(function() {
     var clicker = document.getElementById('clicker');
     clicker.addEventListener('long-press', function(e) {
         e.preventDefault();
+        alert("long-press");
         markType = 1;
         checkMark(markType);
     });
     clicker.addEventListener('click', function() {
+        alert("short-press");
         markType = 0;
         checkMark(markType);
     });
