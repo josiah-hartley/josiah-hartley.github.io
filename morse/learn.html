@@ -17,11 +17,19 @@
         </tr>
     </table>
     
-    <span class="btn" id="clicker" data-long-press-delay="500">
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50">
-        <circle cx='25' cy='25' r='25' class='clicker-circle'></circle>
+    <div id='clicker'>
+    <span class="btn" id="clicker-dot">
+    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+        <circle cx='30' cy='30' r='25' class='clicker-circle'></circle>
     </svg>
     </span>
+    
+    <span class="btn" id="clicker-dash">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50">
+        <line x1='0' y1='20' x2='100' y2='20' class='clicker-line'></line>
+    </svg>
+    </span>
+    </div>
     
     <div class="results-modal hidden">
     <h1>Results</h1>
@@ -32,8 +40,7 @@
     
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
     <script src="jquerylocal.js"></script>
-    <script src="longpressjquery.js"></script>
-    <script src="long-press.js"></script>
+    <!--<script src="longpressjquery.js"></script>-->
     <script src="main.js"></script>
 </body>
 </html>
