@@ -127,16 +127,12 @@ $(function() {
         checkMark(markType);
     }, config.dotDuration);*/
     
-    var clicker = document.getElementById('clicker');
-    clicker.addEventListener('long-press', function(e) {
-        e.preventDefault();
-        //alert("long-press");
-        markType = 1;
+    $("#clicker-dot").on('click', function() {
+        markType = 0;
         checkMark(markType);
     });
-    clicker.addEventListener('click', function() {
-        //alert("short-press");
-        markType = 0;
+    $("#clicker-dash").on('click', function() {
+        markType = 1;
         checkMark(markType);
     });
     
