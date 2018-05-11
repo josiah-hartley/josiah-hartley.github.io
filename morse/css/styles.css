@@ -38,11 +38,17 @@ table {
       opacity: 0.6;
       stroke: white;
       fill: white; }
+      @media (max-width: 767px) {
+        table td .dot, table td .dash {
+          transform: scale(0.75, 0.75); } }
     table td .current-mark .dot, table td .current-mark .dash {
       opacity: 1; }
       @media (min-width: 768px) {
         table td .current-mark .dot, table td .current-mark .dash {
           transform: scale(1.5, 1.5) translate(-18.75%, -18.75%); } }
+      @media (max-width: 767px) {
+        table td .current-mark .dot, table td .current-mark .dash {
+          transform: scale(1, 1); } }
     table td .dash {
       stroke-width: 10; }
 
