@@ -13,7 +13,7 @@ body {
 
 table {
   position: relative;
-  top: 40vh;
+  top: 30vh;
   font-family: Georgia, serif;
   font-weight: 600;
   color: white; }
@@ -90,8 +90,8 @@ table {
   user-select: none;
   position: fixed;
   bottom: 50px;
-  width: 30%;
-  left: 35%;
+  width: 100%;
+  left: 0%;
   text-align: center; }
   #clicker .btn {
     margin: 30px; }
