@@ -82,6 +82,11 @@ table {
   color: white;
   padding: 50px 10px 10px 10px;
   cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   position: fixed;
   bottom: 50px;
