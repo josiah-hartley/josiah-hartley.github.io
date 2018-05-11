@@ -119,7 +119,13 @@ $(function() {
         }
     });
     
+    $("#clicker").longpress(function() {
+        alert("longpressed");
+    })
     
+    $("#clicker").longpress(function() {
+        alert("shortpressed");
+    })
     
     showChars(currentPosition);
     
