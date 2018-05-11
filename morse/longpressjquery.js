@@ -98,9 +98,9 @@
             $this.on('mousemove', move_callback);
 
             // Mobile Support
-            $this.on('touchstart', mousedown_callback);
-            $this.on('touchend', mouseup_callback);
-            $this.on('touchmove', move_callback);
+            $this.on('touchstart', mousedown_callback(e));
+            $this.on('touchend', mouseup_callback(e));
+            $this.on('touchmove', move_callback(e));
         });
     };
 }(jQuery));
