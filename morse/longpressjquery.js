@@ -25,7 +25,10 @@
 
                          // to keep track of how long something was pressed
              var mouse_down_time;
-             var mouse_up_x, mouse_up_y, mouse_down_x, mouse_down_y;
+             var mouse_up_x;
+             var mouse_up_y;
+             var mouse_down_x;
+             var mouse_down_y;
              var timeout;
              var short_call_time = 0;
  
