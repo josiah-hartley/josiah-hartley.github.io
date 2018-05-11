@@ -1,0 +1,84 @@
+body {
+  height: 90vh;
+  background: #101010;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #101010 1%, #191919 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #101010 1%, #191919 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #101010 1%, #191919 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101010', endColorstr='#191919',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+table {
+  position: relative;
+  top: 40vh;
+  font-family: Georgia, serif;
+  font-weight: 600;
+  color: white; }
+  table td {
+    text-align: center;
+    padding: 5px 30px 5px 30px;
+    font-size: 3.5em;
+    /*span:not(.current-mark) {
+        .highlighted-svg: {
+            stroke: red;
+            //display: none;
+        }
+    }*/ }
+    table td:not(.center-char) {
+      opacity: 0.6; }
+    table td .dot, table td .dash {
+      opacity: 0.6;
+      stroke: white;
+      fill: white; }
+    table td .current-mark .dot, table td .current-mark .dash {
+      transform: scale(1.5, 1.5) translate(-18.75%, -18.75%);
+      opacity: 1; }
+    table td .dash {
+      stroke-width: 10; }
+
+.incorrect-mark, .incorrect-char {
+  color: red; }
+  .incorrect-mark .dot, .incorrect-mark .dash, .incorrect-char .dot, .incorrect-char .dash {
+    stroke: red;
+    fill: red; }
+
+.correct-mark, .correct-char {
+  color: green; }
+  .correct-mark .dot, .correct-mark .dash, .correct-char .dot, .correct-char .dash {
+    stroke: green;
+    fill: green; }
+
+.current-mark {
+  font-weight: 600;
+  font-size: 120%; }
+
+.results-modal {
+  position: fixed;
+  z-index: 2;
+  background-color: black;
+  color: white;
+  width: 50%;
+  left: 25%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  min-height: 30vh;
+  padding: 10px 40px 40px 40px; }
+  .results-modal .btn {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none; }
+    .results-modal .btn:hover {
+      background-color: white;
+      color: black; }
+
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=styles.css.map */
