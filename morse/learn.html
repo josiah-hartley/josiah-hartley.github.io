@@ -2,12 +2,78 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    
+    <div class="settings-holder">
+    <div class="dropdown">
+      <div class="dropdown-button-holder">
+      <button id="settingsbtn" class="dropbtn">
+          <i class="material-icons">
+              settings
+          </i>
+      </button>
+      </div>
+      <div class="dropdown-content dropdown-hidden">
+        <a id="pick-text">Pick Text</a>
+        <a id="enter-new-text">Enter New Text</a>
+        <a id="show-mobile-controls">Toggle Mobile Controls</a>
+      </div>
+    </div> 
+    </div>
+    
+    <!--<button id="enter-new-text">Enter New Text</button>-->
+    <div class="popup hidden" id="new-text-box">
+        <form id="new-text-form">
+            <textarea id="new-text" rows='10' cols='30'></textarea><br>
+          <!--<input type="submit" value="Go">-->
+            <button id="submit-text-form">Go</button>
+            <button id="cancel-text-form">Cancel</button>
+        </form>
+        <!--<input type="text" />
+        <button id="submit-new-text">Submit</button>-->
+    </div>
+    
+    <div class="popup hidden" id="text-selector">
+        Use the dropdown menu below to select the alphabet or the first line of a book.
+        <form>
+            <select id="text-options">
+                <option></option>
+            </select>
+            <button id="submit-text-choice">Go</button>
+            <button id="cancel-text-choice">Cancel</button>
+        </form>
+    </div>
+    
+    <div class="full-text-viewer">
+        <div class="past-holder">
+            <div class="past-outer">
+            <div class="past-inner">
+                <span id="past-text"></span>    
+            </div>
+            </div>
+        </div>
+        <div class="current-holder">
+            <span id="current-text"></span>  
+        </div>
+        <div class="future-holder">
+            <span id="future-text"></span>
+        </div>
+    </div>
+    <!--<table align="center" class="full-text-viewer">
+        <tr>
+            <td class="past-holder"><span class="past-text-wrapper"><span id="past-text"></span></span></td>
+            <td class="current-holder"><span id="current-text"></span></td>
+            <td class="future-holder"><span id="future-text"></span></td>
+        </tr>
+    </table>-->
 
-    <div class="instructions">Default key: spacebar</div>
-    <table align="center">
+    <div class="instructions">Default key: spacebar<br>
+        <!--<button id="show-mobile-controls">Toggle Mobile Controls</button>--></div>
+    <table align="center" class="main-ticker">
         <!--<tr>
             <th>Previous Character</th><th>Current Character</th><th>Next Character</th>
         </tr>-->
@@ -19,7 +85,7 @@
         </tr>
     </table>
     
-    <div id='clicker'>
+    <div id='clicker' class="hidden-not-phone">
     <span class="btn" id="clicker-dot">
     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
         <circle cx='30' cy='30' r='25' class='clicker-circle'></circle>
