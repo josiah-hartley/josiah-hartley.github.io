@@ -266,9 +266,9 @@ body {
   background-color: #f1f1f1; }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-hidden {
-  display: block; }
-
+/*.dropdown:hover .dropdown-hidden {
+    display: block;
+}*/
 /*.popup {
     padding-top: 100px;
 }*/
