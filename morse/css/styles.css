@@ -11,13 +11,85 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101010', endColorstr='#191919',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
 
-table {
+/*.full-text-viewer {
+    color: white;
+    position: absolute;
+    width: 100%;
+    
+    td {
+        border: 1px solid white;
+        //border-collapse: collapse;
+        letter-spacing: 5px;
+    }
+    
+    .past-holder, .future-holder {
+        position: absolute;
+        width: 45%;
+        overflow: hidden;
+    }
+    
+    .past-holder {
+        margin-right: auto;
+        margin-left: auto;
+        .past-text-wrapper {
+            text-align: right;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        #past-text {
+            float: right;
+        }
+    }
+    
+    .current-holder {
+        width: 1em;
+        text-align: center;
+        font-size: 150%;
+        font-weight: 600;
+    }
+    
+    
+}*/
+.full-text-viewer {
+  width: 100%;
+  color: white;
+  text-align: center; }
+  .full-text-viewer div {
+    display: inline-block;
+    vertical-align: bottom; }
+  .full-text-viewer .past-holder, .full-text-viewer .future-holder {
+    width: 40%; }
+  .full-text-viewer .past-outer {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap; }
+    .full-text-viewer .past-outer .past-inner {
+      float: right;
+      overflow: hidden;
+      white-space: nowrap; }
+    .full-text-viewer .past-outer #past-text {
+      float: right; }
+  .full-text-viewer .current-holder {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 600;
+    vertical-align: middle; }
+  .full-text-viewer .future-holder {
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap; }
+
+.main-ticker {
   position: relative;
   top: 30vh;
   font-family: Georgia, serif;
   font-weight: 600;
   color: white; }
-  table td {
+  .main-ticker td {
     text-align: center;
     /*span:not(.current-mark) {
         .highlighted-svg: {
@@ -26,71 +98,83 @@ table {
         }
     }*/ }
     @media (min-width: 768px) {
-      table td {
+      .main-ticker td {
         padding: 5px 30px 5px 30px;
         font-size: 3.5em; } }
     @media (max-width: 767px) {
-      table td {
+      .main-ticker td {
         padding: 5px;
         font-size: 1.5em; } }
-    table td:not(.center-char) {
+    .main-ticker td:not(.center-char) {
       opacity: 0.6; }
-    table td .dot, table td .dash {
+    .main-ticker td .dot, .main-ticker td .dash {
       opacity: 0.6;
       stroke: white;
       fill: white; }
       @media (max-width: 767px) {
-        table td .dot, table td .dash {
+        .main-ticker td .dot, .main-ticker td .dash {
           transform: scale(0.75, 0.75); } }
-    table td .current-mark .dot, table td .current-mark .dash {
+    .main-ticker td .current-mark .dot, .main-ticker td .current-mark .dash {
       opacity: 1; }
       @media (min-width: 768px) {
-        table td .current-mark .dot, table td .current-mark .dash {
+        .main-ticker td .current-mark .dot, .main-ticker td .current-mark .dash {
           transform: scale(1.5, 1.5) translate(-18.75%, -18.75%); } }
       @media (max-width: 767px) {
-        table td .current-mark .dot, table td .current-mark .dash {
+        .main-ticker td .current-mark .dot, .main-ticker td .current-mark .dash {
           transform: scale(1, 1); } }
-    table td .dash {
+    .main-ticker td .dash {
       stroke-width: 10; }
 
 .incorrect-mark, .incorrect-char {
-  color: red; }
+  color: red !important; }
   .incorrect-mark .dot, .incorrect-mark .dash, .incorrect-char .dot, .incorrect-char .dash {
-    stroke: red;
-    fill: red; }
+    stroke: red !important;
+    fill: red !important; }
 
 .correct-mark, .correct-char {
-  color: green; }
+  color: green !important; }
   .correct-mark .dot, .correct-mark .dash, .correct-char .dot, .correct-char .dash {
-    stroke: green;
-    fill: green; }
+    stroke: green !important;
+    fill: green !important; }
 
 .current-mark {
   font-weight: 600;
   font-size: 120%; }
 
-.results-modal {
+.results-modal, #new-text-box, #text-selector {
   position: fixed;
   z-index: 2;
   background-color: black;
-  color: white;
-  width: 50%;
-  left: 25%;
-  top: 50%;
-  transform: translate(0%, -50%);
-  min-height: 30vh;
-  padding: 10px 40px 40px 40px; }
-  .results-modal .btn {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-    border: 1px solid white;
-    padding: 10px;
-    cursor: pointer;
-    user-select: none; }
-    .results-modal .btn:hover {
-      background-color: white;
-      color: black; }
+  color: white; }
+  @media (max-width: 767px) {
+    .results-modal, #new-text-box, #text-selector {
+      width: 100%;
+      height: 100vh;
+      left: 0%;
+      top: 0%;
+      padding: 50px 10px 10px 10px; } }
+  @media (min-width: 768px) {
+    .results-modal, #new-text-box, #text-selector {
+      width: 50%;
+      left: 25%;
+      top: 50%;
+      transform: translate(0%, -50%);
+      min-height: 30vh;
+      padding: 40px 40px 40px 40px; } }
+  .results-modal form, #new-text-box form, #text-selector form {
+    text-align: center; }
+
+.results-modal .btn {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  border: 1px solid white;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none; }
+  .results-modal .btn:hover {
+    background-color: white;
+    color: black; }
 
 #clicker {
   color: white;
@@ -109,9 +193,10 @@ table {
   text-align: center; }
   #clicker .btn {
     margin: 30px; }
-  @media (min-width: 768px) {
-    #clicker {
-      display: none; } }
+
+@media (min-width: 768px) {
+  .hidden-not-phone {
+    display: none; } }
 
 .clicker-circle {
   stroke: white;
@@ -135,5 +220,57 @@ table {
   @media (max-width: 767px) {
     .instructions {
       display: none; } }
+
+.settings-holder {
+  position: fixed;
+  right: 0%;
+  margin-right: 10px; }
+
+/*.dropdown-button-holder {
+    text-align: right;
+}*/
+.dropbtn {
+  background-color: #101010;
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer; }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0; }
+
+.dropdown-hidden {
+  display: none; }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer; }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-hidden {
+  display: block; }
+
+/*.popup {
+    padding-top: 100px;
+}*/
 
 /*# sourceMappingURL=styles.css.map */
