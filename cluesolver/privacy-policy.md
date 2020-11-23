@@ -1,9 +1,9 @@
 # PRIVACY POLICY
 
-### Last updated April 05, 2020
+### Last updated November 23, 2020
 
 
-Thank you for choosing to be part of our community at Spymasters (“**Company**”, “**we**”, “**us**”, or “**our**”). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at spymastersapp@gmail.com.
+The Clue Solver app is committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at cluesolverapp@gmail.com.
 
 When you visit our mobile application, and use our services, you trust us with your personal information. We take your privacy very seriously. In this privacy policy, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy policy that you do not agree with, please discontinue use of our Apps and our services.
 
@@ -61,8 +61,6 @@ We use personal information collected via our Apps for a variety of business pur
 
 We use the information we collect or receive:
 
-* To facilitate account creation and logon process. If you choose to link your account with us to a third party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract.
-* To enable user-to-user communications. We may use your information in order to enable user-to-user communications with each user's consent.
 * To manage user accounts. We may use your information for the purposes of managing our account and keeping it in working order.
 
 
@@ -160,8 +158,8 @@ We may update this privacy policy from time to time. The updated version will be
 
 ## 12. HOW CAN YOU CONTACT US ABOUT THIS POLICY?
 
-If you have questions or comments about this policy, you may email us at spymastersapp@gmail.com.
+If you have questions or comments about this policy, you may email us at cluesolverapp@gmail.com.
 
 
 HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
-Based on the laws of some countries, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request by sending an email to spymastersapp@gmail.com. We will respond to your request within 30 days.
+Based on the laws of some countries, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request by sending an email to cluesolverapp@gmail.com. We will respond to your request within 30 days.
